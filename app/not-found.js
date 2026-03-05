@@ -6,7 +6,7 @@ export default function NotFound() {
       <div className="not-found-card">
         <h1>Page not found</h1>
         <p>The URL does not map to a route in this site.</p>
-        <Link href="/" className="button solid">
+        <Link href="/" className="btn-solid">
           Back to home
         </Link>
       </div>

@@ -13,9 +13,9 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata = {
-  title: "Elias Lofgren | Digital Business Card",
+  title: "Elias Löfgren | Growth & Marketing Leader",
   description:
-    "Elias Lofgren - digital business card. Scandinavian design, modern web experiences."
+    "Elias Löfgren — 15+ years building and scaling revenue engines in digital consumer companies. Head of Marketing at Insurello."
 };
 
 export default function RootLayout({ children }) {
