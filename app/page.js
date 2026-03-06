@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 const experience = [
   {
@@ -131,27 +132,38 @@ export default function HomePage() {
         </div>
         <div className="grain" aria-hidden="true" />
         <div className="hero-content">
-          <p className="eyebrow">Growth &amp; Marketing Leader</p>
-          <h1>
-            Elias<br />
-            <em>Löfgren</em>
-          </h1>
-          <p className="hero-lead">
-            15+ years building and scaling revenue engines in digital consumer
-            companies. Full-funnel, data-driven, and deeply invested in the craft.
-          </p>
-          <div className="cta-row">
-            <a className="btn-solid" href="mailto:get@eliaslofgren.com">
-              get@eliaslofgren.com
-            </a>
-            <a
-              className="btn-ghost"
-              href="https://linkedin.com/in/eliaslofgren"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn ↗
-            </a>
+          <div className="hero-text">
+            <p className="eyebrow">Growth &amp; Marketing Leader</p>
+            <h1>
+              Elias<br />
+              <em>Löfgren</em>
+            </h1>
+            <p className="hero-lead">
+              15+ years building and scaling revenue engines in digital consumer
+              companies. Full-funnel, data-driven, and deeply invested in the craft.
+            </p>
+            <div className="cta-row">
+              <a className="btn-solid" href="mailto:get@eliaslofgren.com">
+                get@eliaslofgren.com
+              </a>
+              <a
+                className="btn-ghost"
+                href="https://linkedin.com/in/eliaslofgren"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn ↗
+              </a>
+            </div>
+          </div>
+          <div className="hero-photo">
+            <Image
+              src="/elias.png"
+              alt="Elias Löfgren"
+              width={420}
+              height={520}
+              priority
+            />
           </div>
         </div>
         <div className="scroll-cue" aria-hidden="true">

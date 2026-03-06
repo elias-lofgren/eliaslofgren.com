@@ -187,6 +187,27 @@ a {
   width: var(--shell-width);
   margin: 0 auto;
   padding: 6rem 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-text {
+  min-width: 0;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.hero-photo img {
+  display: block;
+  width: clamp(220px, 28vw, 380px);
+  height: auto;
+  border-radius: calc(var(--radius) + 4px);
+  object-fit: cover;
+  box-shadow: var(--shadow);
 }
 
 .eyebrow {
@@ -588,6 +609,18 @@ h2 {
 
 /* ── Responsive ── */
 @media (max-width: 860px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo {
+    order: -1;
+  }
+
+  .hero-photo img {
+    width: clamp(140px, 40vw, 220px);
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -615,7 +648,7 @@ h2 {
   }
 
   .hero-content {
-    padding: 5rem 0 4rem;
+    padding: 4rem 0 3rem;
   }
 }
 
